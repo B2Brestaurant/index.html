@@ -1,17 +1,145 @@
-I’ll embed all 7 product images as base64 and wire up each affiliate link. Let me read the images first.​​​​​​​​​​​​​​​​
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Anti-Aging & Wellness Products</title>
 
-All 7 products are embedded with their images and linked — here’s how they’re mapped:
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
 
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
 
+        h1 {
+            margin: 0;
+        }
 
-|#|Product                    |Affiliate Link                                                   |
-|-|---------------------------|-----------------------------------------------------------------|
-|1|Idrotherapy Wrinkle Reducer|[e-idrotherapylove.com](http://e-idrotherapylove.com)            |
-|2|SeriSkin Anti-Aging Formula|[seriskin.com](http://seriskin.com)                              |
-|3|Derma Prime Plus           |[digistore24.com](http://digistore24.com)                        |
-|4|ReFirmance Serum           |[refirmance24.com](http://refirmance24.com)                      |
-|5|Revitag Collagen Serum     |[therevitag24.com](http://therevitag24.com)                      |
-|6|RevaNail                   |[getrevanail.com](http://getrevanail.com)                        |
-|7|Pep Tonic                  |[advancedbionutritionals.com](http://advancedbionutritionals.com)|
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
 
-All images are embedded directly in the file (base64), so it works offline without needing to host images separately. Every card click goes straight to your affiliate link.​​​​​​​​​​​​​​​​
+        .product {
+            background: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background: #ff4d6d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #e33b5c;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Premium Anti-Aging & Wellness Collection</h1>
+    <p>Look younger, feel better, and boost your confidence</p>
+</header>
+
+<div class="container">
+
+    <!-- Idrotherapy -->
+    <div class="product">
+        <h3>Idrotherapy Wrinkle Reducer</h3>
+        <img src="https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg">
+        <p>Reduce wrinkles and fine lines around your eyes quickly.</p>
+        <p style="color:red;">Limited Time Offer</p>
+        <a href="https://e-idrotherapylove.com/#aff=eugenebaidoo658633" target="_blank" class="btn">Get Yours Now</a>
+    </div>
+
+    <!-- SeriSkin -->
+    <div class="product">
+        <h3>SeriSkin Anti-Aging Formula</h3>
+        <img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg">
+        <p>Powerful daily supplement for youthful and glowing skin.</p>
+        <p style="color:red;">Limited Time Offer</p>
+        <a href="https://www.seriskin.com#aff=eugenebaidoo658633" target="_blank" class="btn">Get Yours Now</a>
+    </div>
+
+    <!-- Derma Prime -->
+    <div class="product">
+        <h3>Derma Prime Plus</h3>
+        <img src="https://images.pexels.com/photos/3685530/pexels-photo-3685530.jpeg">
+        <p>Support clear, smooth, and radiant skin naturally.</p>
+        <p style="color:red;">Limited Time Offer</p>
+        <a href="https://www.digistore24.com/redir/464719/eugenebaidoo658633/" target="_blank" class="btn">Get Yours Now</a>
+    </div>
+
+    <!-- ReFirmance -->
+    <div class="product">
+        <h3>ReFirmance Serum</h3>
+        <img src="https://images.pexels.com/photos/6621466/pexels-photo-6621466.jpeg">
+        <p>Boost skin firmness and reduce visible signs of aging.</p>
+        <p style="color:red;">Limited Time Offer</p>
+        <a href="https://refirmance24.com/text.php#aff=eugenebaidoo658633" target="_blank" class="btn">Get Yours Now</a>
+    </div>
+
+    <!-- ReviTag -->
+    <div class="product">
+        <h3>ReviTag Collagen Support</h3>
+        <img src="https://images.pexels.com/photos/6621358/pexels-photo-6621358.jpeg">
+        <p>Enhance collagen production for youthful skin.</p>
+        <p style="color:red;">Limited Time Offer</p>
+        <a href="http://therevitag24.com/text.php#aff=eugenebaidoo658633" target="_blank" class="btn">Get Yours Now</a>
+    </div>
+
+    <!-- RevaNail -->
+    <div class="product">
+        <h3>RevaNail</h3>
+        <img src="https://images.pexels.com/photos/3997983/pexels-photo-3997983.jpeg">
+        <p>Strengthen nails and improve overall nail health.</p>
+        <p style="color:red;">Limited Time Offer</p>
+        <a href="https://getrevanail.com/read#aff=eugenebaidoo658633" target="_blank" class="btn">Get Yours Now</a>
+    </div>
+
+    <!-- Pep Tonic -->
+    <div class="product">
+        <h3>Pep Tonic</h3>
+        <img src="https://images.pexels.com/photos/5938368/pexels-photo-5938368.jpeg">
+        <p>Boost energy, vitality, and overall wellness daily.</p>
+        <p style="color:red;">Limited Time Offer</p>
+        <a href="https://www.advancedbionutritionals.com/DS24/Pep-Tonic/First-Anti-Aging-Drink/HD.htm#aff=eugenebaidoo658633" target="_blank" class="btn">Get Yours Now</a>
+    </div>
+
+</div>
+
+</body>
+</html>.​​​​
